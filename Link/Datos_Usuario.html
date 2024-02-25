@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>DATOS DE USUARIO</h1>
+    <h3>Rellena tu CV</h3>
+
+    <form>
+        <label for="Nombre">Nombre: <br></label>
+        <input type="text"  required="" id="Nombre"><br>
+        <label for="Apellido" >Apellido: <br></label>
+        <input type="text" required="" style="width: 300px;" id="Apellido"><br>
+        <label for="Contraseña">Contraseña: <br></label>
+        <input type="password" required="" id="Contraseña"><br><br>
+        <label for="ConFContraseña">Confirme Contraseña: <br></label>
+        <input type="password" required="" id="ConFContraseña"><br>
+        <label>Indentificación</label><br>
+        <select name="" id="">
+            <option value="">TI</option>
+            <option value="">CC</option>
+            <option value="">CE</option>
+        </select>
+        <input type="number"><br>
+
+    <label>Sexo<br></label>
+    <input type="radio" id="hombre">Hombre<br>
+    <input type="radio" id="mujer">Mujer<br>
+    <label>Incluir mi foto</label><br>
+    <input type="file" value="Examinar"><br><br>
+    <input type="checkbox">Estudiante..<br><br>
+
+    <fieldset>
+        <legend>Datos Personales</legend>
+            <label>Departamento</label><br>
+            
+            <select name="Departamento" id="">
+            <option value="" disabled selected> --Selecciona-- </option>
+            <option value="">Antioquia</option>
+            <option value="">Boyacá </option>
+            <option value="">Caldas </option>
+            <option value="">Huila</option>
+            <option value="">Norte de Santander</option>
+            <option value="">Santander </option>
+        </select>
+        <br><label>Fecha de nacimiento</label><br>
+        <input type="number" style="width: 50px;"> de
+        <select name="Meses" id="">
+            <option value="">Enero</option>
+            <option value="">Febrero</option>
+            <option value="">Marzo</option>
+            <option value="">Abril</option>
+            <option value="">Mayo</option>
+            <option value="">Junio</option>
+            <option value="">Julio</option>
+            <option value="">Agosto</option>
+            <option value="">Septiembre</option>
+            <option value="">Octubre</option>
+            <option value="">Noviembre</option>
+            <option value="">Diciembre</option>
+        </select> de
+        <input type="number" style="width: 70px;"><br><br>
+
+        <label>Temas de Interés</label><br>
+        <select name="Tema interes" id="">
+            <option value="">Administracion de bases de datos</option>
+            <option value="">Analisis y programacion</option>
+            <option value="">Arquitectura</option>
+            <option value="">Calidad</option>
+            <option value="">ERP, CRM, Business Intelligence</option>
+        </select>
+    </fieldset>
+    <br>
+    <input type="submit" value="Guardar cambios">
+    <input type="reset" value="Borrar los datos introducidos">
+</form>
+</body>
+</html>
